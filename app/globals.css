@@ -5,6 +5,9 @@
 :root { color-scheme: light; }
 html { scroll-behavior: smooth; }
 body { @apply bg-white font-body text-ink antialiased; overflow-x: hidden; }
+.mobile-app-shell { padding-bottom: calc(4.15rem + env(safe-area-inset-bottom)); }
+.mobile-bottom-nav { padding-bottom: env(safe-area-inset-bottom); }
+@media (min-width: 1024px) { .mobile-app-shell { padding-bottom: 0; } }
 ::selection { background: #c8ef63; color: #10261d; }
 :focus-visible { outline: 3px solid #c8ef63; outline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
