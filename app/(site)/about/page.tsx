@@ -1,4 +1,4 @@
-import type { Metadata } from "next"; import PageHead from "@/components/PageHead"; import { Journey, CTA, Partners } from "@/components/Home"; import { getContent } from "@/lib/content";
+import type { Metadata } from "next/types"; import PageHead from "@/components/PageHead"; import { Journey, CTA, Partners } from "@/components/Home"; import { getContent } from "@/lib/content";
 export function generateMetadata(): Metadata { return { title: "About", description: getContent().about.sub, alternates: { canonical: "/about" } }; }
 export default function About() { const a = getContent().about; return (<><PageHead title={a.title} sub={a.sub} />
   <section className="sec"><div className="wrap grid gap-10 lg:grid-cols-[2fr_1fr]"><div className="max-w-2xl space-y-5 text-lg">

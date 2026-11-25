@@ -8,7 +8,7 @@ npm install
 cp .env.example .env.local     # then edit ADMIN_PASSWORD and SESSION_SECRET
 npm run build && npm start     # or: npm run dev
 ```
-No ADMIN_PASSWORD set? The default is `rise-admin`. The panel warns you. Change it under **Account**.
+If no `ADMIN_PASSWORD` is set and no password has been saved in the admin panel, a built-in development fallback is used. Production login stays disabled until `ADMIN_PASSWORD` and an independent `SESSION_SECRET` of at least 32 characters are configured.
 
 ## What the admin controls
 | Section | Controls |

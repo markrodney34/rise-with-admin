@@ -8,12 +8,12 @@ Website for RISE Sports Foundation, a community sports organization in Mayuge Di
 - Editable site copy, navigation, partners, photos, league data, privacy and terms content through `/admin`.
 - Contact form with input validation, a honeypot field, basic in-memory rate limiting, and a persistent message inbox.
 - Image uploads served from `/uploads/...` and editable JSON content stored on disk.
-- Admin authentication using an HTTP-only signed session cookie; password changes are stored as a salted scrypt hash.
+- Admin authentication using a 12-hour HTTP-only signed session cookie; password changes use a salted scrypt hash and invalidate existing sessions.
 - Generated sitemap, robots rules, metadata, and SportsOrganization structured data.
 
 ## Requirements
 
-- Node.js 18 or later
+- Node.js 20.9 or later
 - npm
 
 ## Run locally
@@ -26,7 +26,7 @@ Copy `.env.example` to `.env.local`, then set a strong admin password and sessio
 
 ```env
 ADMIN_PASSWORD=use-a-long-unique-password
-SESSION_SECRET=use-a-long-random-secret
+SESSION_SECRET=replace-with-at-least-32-random-characters
 # DATA_DIR=./content
 ```
 
@@ -36,7 +36,7 @@ Start the development server:
 npm run dev
 ```
 
-Visit [http://localhost:3000](http://localhost:3000) for the public site and [http://localhost:3000/admin](http://localhost:3000/admin) for the control panel. If `ADMIN_PASSWORD` is not set and no password was saved in the admin panel, the development fallback is `rise-admin`; configure a strong password before exposing the site publicly.
+Visit [http://localhost:3000](http://localhost:3000) for the public site and [http://localhost:3000/admin](http://localhost:3000/admin) for the control panel. A built-in development fallback is available locally when no password has been configured. Production login stays disabled until a strong `ADMIN_PASSWORD` and an independent `SESSION_SECRET` of at least 32 characters are set.
 
 ## Production
 

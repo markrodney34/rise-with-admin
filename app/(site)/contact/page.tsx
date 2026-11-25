@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata } from "next/types";
 import { ExternalLink, Mail, MapPin, Phone } from "lucide-react";
 import PageHead from "@/components/PageHead";
 import ContactForm from "@/components/ContactForm";

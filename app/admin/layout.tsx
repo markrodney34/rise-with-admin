@@ -1,3 +1,3 @@
-import type { Metadata } from "next";
+import type { Metadata } from "next/types";
 export const metadata: Metadata = { title: "Admin", robots: { index: false, follow: false } };
 export default function AdminLayout({ children }: { children: React.ReactNode }) { return <div className="min-h-screen bg-[#eef0e8]">{children}</div>; }

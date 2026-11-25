@@ -45,7 +45,7 @@ export default function AdminApp({ initial, uploads: up0, messages: m0, defaultP
       <div className="mx-auto max-w-5xl space-y-6 p-4 lg:p-8">
 
         {tab === "dashboard" && <>
-          {defaultPw && <p className="border-l-4 border-amber-500 bg-amber-50 p-4 text-sm text-amber-900"><b>Security:</b> you are using the default password. Go to <button className="underline" onClick={() => setTab("account")}>Account</button> and change it now.</p>}
+          {defaultPw && <p className="border-l-4 border-amber-500 bg-amber-50 p-4 text-sm text-amber-900"><b>Security:</b> no admin password is configured. Set ADMIN_PASSWORD and SESSION_SECRET on the server before public launch. Go to <button className="underline" onClick={() => setTab("account")}>Account</button> to choose a stronger password.</p>}
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{[["Unread messages", unread, "messages"], ["Gallery photos", c.highlights.length, "highlights"], ["Seasons of tables", Object.values(c.standings).flat().length, "standings"], ["Uploaded files", uploads.length, "photos"]].map(([l, n, t]) => (
             <button key={l as string} onClick={() => setTab(t as Tab)} className="border border-navy/10 bg-white p-5 text-left shadow-lift transition hover:border-grow"><p className="font-display text-5xl font-bold text-grow">{n as number}</p><p className="mt-1 text-sm font-semibold text-navy">{l as string}</p></button>))}</div>
           <Card title="What you can control"><ul className="grid gap-2 text-sm sm:grid-cols-2">{TABS.slice(1, 12).map(([k, l]) => <li key={k}><button className="underline" onClick={() => setTab(k)}>{l}</button></li>)}</ul>
@@ -136,7 +136,7 @@ export default function AdminApp({ initial, uploads: up0, messages: m0, defaultP
 
 function Account() {
   const [cur, setCur] = useState(""); const [nw, setNw] = useState(""); const [msg, setMsg] = useState("");
-  return (<Card title="Change admin password"><div className="grid max-w-md gap-4"><Field label="Current password" type="password" value={cur} onChange={setCur} /><Field label="New password (min. 8 characters)" type="password" value={nw} onChange={setNw} />
+  return (<Card title="Change admin password"><div className="grid max-w-md gap-4"><Field label="Current password" type="password" value={cur} onChange={setCur} /><Field label="New password (12–256 characters)" type="password" value={nw} onChange={setNw} />
     <button className="btn-g w-fit" onClick={async () => { const r = await fetch("/api/admin/password", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ current: cur, next: nw }) }); const j = await r.json(); setMsg(r.ok ? "Password updated." : j.error); if (r.ok) { setCur(""); setNw(""); } }}>Update password</button>{msg && <p role="status" className="text-sm font-semibold text-navy">{msg}</p>}</div></Card>);
 }
 

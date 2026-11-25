@@ -1,3 +1,3 @@
-import type { Metadata } from "next"; import PageHead from "@/components/PageHead"; import HighlightsGrid from "@/components/HighlightsGrid"; import { CTA } from "@/components/Home";
+import type { Metadata } from "next/types"; import PageHead from "@/components/PageHead"; import HighlightsGrid from "@/components/HighlightsGrid"; import { CTA } from "@/components/Home";
 export const metadata: Metadata = { title: "Highlights", description: "Photos from RISE leagues, training and community events in Mayuge.", alternates: { canonical: "/highlights" } };
 export default function Page() { return (<><PageHead title="Highlights" sub="Matches, training, girls' football and community days." /><section className="sec"><div className="wrap"><HighlightsGrid /></div></section><CTA /></>); }

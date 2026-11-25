@@ -1,13 +1,34 @@
 import { NextResponse } from "next/server";
-import { checkPassword, makeToken, COOKIE_NAME } from "@/lib/auth";
-const tries = new Map<string, { n: number; t: number }>();
+import { checkPassword, makeToken, COOKIE_NAME, sessionSecretConfigured } from "@/lib/auth";
+import { clientIp } from "@/lib/client-ip";
+
+const tries = new Map<string, { count: number; started: number }>();
+const windowMs = 15 * 60 * 1000;
+const maxAttempts = 8;
+
+function prune(now: number) {
+  if (tries.size < 5000) return;
+  for (const [key, entry] of tries) if (now - entry.started >= windowMs) tries.delete(key);
+}
+
 export async function POST(req: Request) {
-  const ip = req.headers.get("x-forwarded-for") ?? "local"; const now = Date.now(); const r = tries.get(ip);
-  const live = r && now - r.t < 15 * 60 * 1000;
-  if (live && r.n >= 8) return NextResponse.json({ error: "Too many attempts. Try again in 15 minutes." }, { status: 429 });
-  const { password } = await req.json().catch(() => ({ password: "" }));
-  if (!checkPassword(String(password ?? ""))) { tries.set(ip, { n: (live ? r.n : 0) + 1, t: live ? r.t : now }); return NextResponse.json({ error: "Wrong password." }, { status: 401 }); }
-  tries.delete(ip);
+  if (process.env.NODE_ENV === "production" && !sessionSecretConfigured()) return NextResponse.json({ error: "Admin login is not configured on this server." }, { status: 503 });
+  const now = Date.now();
+  prune(now);
+  const key = clientIp(req);
+  if (tries.size >= 10000 && !tries.has(key)) return NextResponse.json({ error: "Login is temporarily unavailable. Try again shortly." }, { status: 503 });
+  const previous = tries.get(key);
+  const active = previous && now - previous.started < windowMs;
+  if (active && previous.count >= maxAttempts) return NextResponse.json({ error: "Too many attempts. Try again in 15 minutes." }, { status: 429 });
+
+  const body = await req.json().catch(() => null);
+  const password = typeof body?.password === "string" ? body.password : "";
+  if (!checkPassword(password)) {
+    tries.set(key, { count: (active ? previous.count : 0) + 1, started: active ? previous.started : now });
+    return NextResponse.json({ error: "Wrong password." }, { status: 401 });
+  }
+
+  tries.delete(key);
   const res = NextResponse.json({ ok: true });
   res.cookies.set(COOKIE_NAME, makeToken(), { httpOnly: true, sameSite: "lax", secure: process.env.NODE_ENV === "production", path: "/", maxAge: 60 * 60 * 12 });
   return res;
