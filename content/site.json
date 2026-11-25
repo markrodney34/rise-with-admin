@@ -1,0 +1,1692 @@
+{
+ "site": {
+  "name": "RISE Sports Foundation",
+  "url": "https://risemayugesports.org",
+  "tagline": "Grassroots community engagement through sports.",
+  "email": "andrew@civilconnections.org",
+  "phone": "",
+  "address": "Mayuge District, Uganda",
+  "social": []
+ },
+ "home": {
+  "heroBadge": "Mayuge District · Uganda",
+  "heroLine1": "Building communities.",
+  "heroLine2": "Changing lives",
+  "heroLine3": "through sport.",
+  "heroSub": "Empowering young people, developing grassroots sports and creating opportunities for communities through football and other sporting activities.",
+  "whoTitle": "Development through sports",
+  "whoText": "RISE Sports Foundation empowers community development and youth talent through sports. We run three leagues in Mayuge District, and offer training, sports equipment and infrastructure to help young athletes reach their goals.",
+  "mission": "Grow communities by providing space to nurture talent and inclusion.",
+  "vision": "",
+  "values": "Talent, inclusion and collaboration.",
+  "impact": [
+   {
+    "n": "160",
+    "t": "players in the 2020 pilot, across 8 teams"
+   },
+   {
+    "n": "540+",
+    "t": "players by 2021/2022, in 12 soccer and 6 netball teams"
+   },
+   {
+    "n": "720+",
+    "t": "players by 2023, with 54 managers"
+   },
+   {
+    "n": "2024",
+    "t": "girls soccer league and RISE Mayuge regional team begin"
+   }
+  ],
+  "ctaTitle": "Be part of the change.",
+  "ctaText": "Together, we can create opportunities, strengthen communities and inspire the next generation through sports."
+ },
+ "about": {
+  "title": "About RISE",
+  "sub": "Development through sports in Mayuge District, Uganda.",
+  "heading": "Background and the league's logic",
+  "paragraphs": [
+   "The league began in 2007, started by a local organisation, Rural Urban Initiative to Support Own Efforts (RISE). It was championed early on by Kristian Bertelsen, a Danish volunteer and aspiring football coach.",
+   "He started passing a new ball with a few volunteers and staff. Within 30 minutes, more than 10 young people were waiting at the sideline to join. That interest led to a tournament of eight community teams, and in November 2007 to a 14-team league with two five-month rounds a year.",
+   "Many school-going youth were unemployed and had few group activities, which exposed them to isolation, risky behaviour and the HIV/AIDS wave. The league gave them a place to belong."
+  ],
+  "sideTitle": "How the leagues are organised",
+  "sideText": "A 7-person committee: a league coordinator, four community mobilisers and two peer educators. Mobilisers are chosen democratically by the teams."
+ },
+ "leagues": {
+  "senior-soccer": {
+   "name": "Senior Soccer",
+   "img": "senior",
+   "tag": "Senior division",
+   "blurb": "A six-month football event with 12 teams, activating over 400 players.",
+   "intro": "The Soccer League is a 6-month football event with 12 teams, activating over 400 players. It attracts at least 500 weekly spectators and involves more than 3,000 youths and community members every month.",
+   "objectives": [
+    "Provide accessible leisure activities",
+    "Promote talent",
+    "Provide a space for networking and issue discussions",
+    "Encourage community development discussions on entrepreneurial culture, social investment, social security, education achievement and gender equality"
+   ],
+   "stats": [
+    {
+     "n": "12",
+     "t": "teams"
+    },
+    {
+     "n": "400+",
+     "t": "players"
+    },
+    {
+     "n": "500+",
+     "t": "weekly spectators"
+    },
+    {
+     "n": "3,000+",
+     "t": "youths and community members involved each month"
+    }
+   ]
+  },
+  "junior-soccer": {
+   "name": "Junior Soccer",
+   "img": "junior",
+   "tag": "Youth development",
+   "blurb": "A league created for younger players who did not fit into the senior league.",
+   "intro": "To create space for younger players who did not fit into the senior league, RISE formed a junior soccer league.",
+   "objectives": [
+    "A structured activity that integrates sports, academics and a constructive outlet for young people",
+    "Improved physical health, talent and sports skills development",
+    "Teamwork, social skills, life skills and character",
+    "Community engagement, youth empowerment and community pride"
+   ],
+   "stats": []
+  },
+  "girls-soccer": {
+   "name": "Girls Soccer",
+   "img": "girls",
+   "tag": "Girls division",
+   "blurb": "An era of empowered girls: from netball to a girls soccer league.",
+   "intro": "After four seasons of a netball league for girls, the calls were clear: girls wanted to play football and not be limited to netball. RISE listened and said yes.",
+   "objectives": [
+    "Promote community building and skills development",
+    "Empower girls and attract attention and support for the league and local economic development",
+    "Facilitate cultural dialogue on the role of women and towards gender equality, breaking down cultural barriers",
+    "Run health education programmes that promote well-being in the community"
+   ],
+   "stats": []
+  }
+ },
+ "milestones": [
+  {
+   "year": "2020",
+   "title": "The Beginning",
+   "text": "A pilot league started in August with 8 soccer teams, 160 players and 8 managers."
+  },
+  {
+   "year": "2021/2022",
+   "title": "Community Mobilization",
+   "text": "Grew to 12 soccer teams and 6 girls' netball teams, with 540+ players and 24 managers."
+  },
+  {
+   "year": "2023",
+   "title": "Expansion and Development",
+   "text": "Junior league introduced. 720+ players and 54 managers. Agricultural land acquired and a league office established."
+  },
+  {
+   "year": "2024",
+   "title": "Girls' Football and Social Impact",
+   "text": "Girls soccer league introduced, the RISE Mayuge regional team formed, and grants of $100 to $1,000 awarded for social impact activities."
+  }
+ ],
+ "partners": [
+  {
+   "name": "Civil Connections Community Foundation",
+   "where": "Denmark",
+   "role": "Founding collaborator"
+  },
+  {
+   "name": "The Youth Alive Initiative",
+   "where": "Mayuge",
+   "role": "Founding collaborator"
+  },
+  {
+   "name": "Mayuge Community House",
+   "where": "Uganda",
+   "role": "Founding collaborator"
+  },
+  {
+   "name": "Grassroots Allies",
+   "where": "Denmark",
+   "role": "Founding collaborator and funder"
+  }
+ ],
+ "funders": [
+  "FASTER",
+  "OIKOS",
+  "CISU Denmark",
+  "Grassroots Allies",
+  "Civil Connections"
+ ],
+ "images": {
+  "hero": {
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0005.jpg",
+   "alt": "RISE Sports Foundation activity photo (2024)"
+  },
+  "about": {
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0006.jpg",
+   "alt": "RISE Sports Foundation activity photo (2024)"
+  },
+  "cta": {
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0007.jpg",
+   "alt": "RISE Sports Foundation activity photo (2024)"
+  },
+  "senior": {
+   "src": "",
+   "alt": "Senior league match in progress"
+  },
+  "junior": {
+   "src": "",
+   "alt": "Junior league players training"
+  },
+  "girls": {
+   "src": "",
+   "alt": "Girls soccer league players in a match"
+  }
+ },
+ "highlights": [
+  {
+   "id": 1,
+   "cat": "Highlights",
+   "title": "RISE activity photo 1",
+   "tone": 0,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0005.jpg"
+  },
+  {
+   "id": 2,
+   "cat": "Highlights",
+   "title": "RISE activity photo 2",
+   "tone": 1,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0006.jpg"
+  },
+  {
+   "id": 3,
+   "cat": "Highlights",
+   "title": "RISE activity photo 3",
+   "tone": 2,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0007.jpg"
+  },
+  {
+   "id": 4,
+   "cat": "Highlights",
+   "title": "RISE activity photo 4",
+   "tone": 3,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0005.jpg"
+  },
+  {
+   "id": 5,
+   "cat": "Highlights",
+   "title": "RISE activity photo 5",
+   "tone": 0,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0006.jpg"
+  },
+  {
+   "id": 6,
+   "cat": "Highlights",
+   "title": "RISE activity photo 6",
+   "tone": 1,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0007.jpg"
+  },
+  {
+   "id": 7,
+   "cat": "Highlights",
+   "title": "RISE activity photo 7",
+   "tone": 2,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0008.jpg"
+  },
+  {
+   "id": 8,
+   "cat": "Highlights",
+   "title": "RISE activity photo 8",
+   "tone": 3,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0009.jpg"
+  },
+  {
+   "id": 9,
+   "cat": "Highlights",
+   "title": "RISE activity photo 9",
+   "tone": 0,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0010.jpg"
+  },
+  {
+   "id": 10,
+   "cat": "Highlights",
+   "title": "RISE activity photo 10",
+   "tone": 1,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0012.jpg"
+  },
+  {
+   "id": 11,
+   "cat": "Highlights",
+   "title": "RISE activity photo 11",
+   "tone": 2,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0013.jpg"
+  },
+  {
+   "id": 12,
+   "cat": "Highlights",
+   "title": "RISE activity photo 12",
+   "tone": 3,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0014.jpg"
+  },
+  {
+   "id": 13,
+   "cat": "Highlights",
+   "title": "RISE activity photo 13",
+   "tone": 0,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0015.jpg"
+  },
+  {
+   "id": 14,
+   "cat": "Highlights",
+   "title": "RISE activity photo 14",
+   "tone": 1,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0016.jpg"
+  },
+  {
+   "id": 15,
+   "cat": "Highlights",
+   "title": "RISE activity photo 15",
+   "tone": 2,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0018.jpg"
+  },
+  {
+   "id": 16,
+   "cat": "Highlights",
+   "title": "RISE activity photo 16",
+   "tone": 3,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0019.jpg"
+  },
+  {
+   "id": 17,
+   "cat": "Highlights",
+   "title": "RISE activity photo 17",
+   "tone": 0,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0020.jpg"
+  },
+  {
+   "id": 18,
+   "cat": "Highlights",
+   "title": "RISE activity photo 18",
+   "tone": 1,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0021.jpg"
+  },
+  {
+   "id": 19,
+   "cat": "Highlights",
+   "title": "RISE activity photo 19",
+   "tone": 2,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0023.jpg"
+  },
+  {
+   "id": 20,
+   "cat": "Highlights",
+   "title": "RISE activity photo 20",
+   "tone": 3,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0024.jpg"
+  },
+  {
+   "id": 21,
+   "cat": "Highlights",
+   "title": "RISE activity photo 21",
+   "tone": 0,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0026.jpg"
+  },
+  {
+   "id": 22,
+   "cat": "Highlights",
+   "title": "RISE activity photo 22",
+   "tone": 1,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0029.jpg"
+  },
+  {
+   "id": 23,
+   "cat": "Highlights",
+   "title": "RISE activity photo 23",
+   "tone": 2,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0031.jpg"
+  },
+  {
+   "id": 24,
+   "cat": "Highlights",
+   "title": "RISE activity photo 24",
+   "tone": 3,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0032.jpg"
+  },
+  {
+   "id": 25,
+   "cat": "Highlights",
+   "title": "RISE activity photo 25",
+   "tone": 0,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0033.jpg"
+  },
+  {
+   "id": 26,
+   "cat": "Highlights",
+   "title": "RISE activity photo 26",
+   "tone": 1,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0036.jpg"
+  },
+  {
+   "id": 27,
+   "cat": "Highlights",
+   "title": "RISE activity photo 27",
+   "tone": 2,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0037.jpg"
+  },
+  {
+   "id": 28,
+   "cat": "Highlights",
+   "title": "RISE activity photo 28",
+   "tone": 3,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0039.jpg"
+  },
+  {
+   "id": 29,
+   "cat": "Highlights",
+   "title": "RISE activity photo 29",
+   "tone": 0,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0040.jpg"
+  },
+  {
+   "id": 30,
+   "cat": "Highlights",
+   "title": "RISE activity photo 30",
+   "tone": 1,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0041.jpg"
+  },
+  {
+   "id": 31,
+   "cat": "Highlights",
+   "title": "RISE activity photo 31",
+   "tone": 2,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0042.jpg"
+  },
+  {
+   "id": 32,
+   "cat": "Highlights",
+   "title": "RISE activity photo 32",
+   "tone": 3,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0043.jpg"
+  },
+  {
+   "id": 33,
+   "cat": "Highlights",
+   "title": "RISE activity photo 33",
+   "tone": 0,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0046.jpg"
+  },
+  {
+   "id": 34,
+   "cat": "Highlights",
+   "title": "RISE activity photo 34",
+   "tone": 1,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0047.jpg"
+  },
+  {
+   "id": 35,
+   "cat": "Highlights",
+   "title": "RISE activity photo 35",
+   "tone": 2,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0049.jpg"
+  },
+  {
+   "id": 36,
+   "cat": "Highlights",
+   "title": "RISE activity photo 36",
+   "tone": 3,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0050.jpg"
+  },
+  {
+   "id": 37,
+   "cat": "Highlights",
+   "title": "RISE activity photo 37",
+   "tone": 0,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0051.jpg"
+  },
+  {
+   "id": 38,
+   "cat": "Highlights",
+   "title": "RISE activity photo 38",
+   "tone": 1,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0052.jpg"
+  },
+  {
+   "id": 39,
+   "cat": "Highlights",
+   "title": "RISE activity photo 39",
+   "tone": 2,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0054.jpg"
+  },
+  {
+   "id": 40,
+   "cat": "Highlights",
+   "title": "RISE activity photo 40",
+   "tone": 3,
+   "src": "https://risemayugesports.org/wp-content/uploads/2024/07/IMG-20240618-WA0055.jpg"
+  }
+ ],
+ "nav": [
+  {
+   "label": "Home",
+   "href": "/"
+  },
+  {
+   "label": "About",
+   "href": "/about"
+  },
+  {
+   "label": "Highlights",
+   "href": "/highlights"
+  },
+  {
+   "label": "Leagues",
+   "href": "/senior-soccer",
+   "children": [
+    {
+     "label": "Senior Soccer",
+     "href": "/senior-soccer"
+    },
+    {
+     "label": "Junior Soccer",
+     "href": "/junior-soccer"
+    },
+    {
+     "label": "Girls Soccer",
+     "href": "/girls-soccer"
+    }
+   ]
+  },
+  {
+   "label": "Contact",
+   "href": "/contact"
+  }
+ ],
+ "legal": {
+  "privacy": "This website stores contact-form messages so RISE can reply to your enquiry. We use the details you send only to respond about partnerships, volunteering or the leagues, and we do not sell or share them.",
+  "terms": "By using this website you agree to use it lawfully and respectfully. Content is provided for information about RISE Sports Foundation and may change without notice."
+ },
+ "girlsReasons": [
+  "Soccer is more popular and visible in the country, and the girls wanted to be part of the buzz.",
+  "Soccer offers more chances of being scouted for school bursaries.",
+  "Soccer puts girls on equal footing with the boys."
+ ],
+ "standings": {
+  "senior": [
+   {
+    "season": "Season 5",
+    "title": "Senior Soccer – Season 5",
+    "rows": [
+     {
+      "pos": 1,
+      "team": "O’Ten FC",
+      "p": 18,
+      "w": 12,
+      "d": 3,
+      "l": 3,
+      "f": 23,
+      "a": 11,
+      "gd": 12,
+      "pts": 39
+     },
+     {
+      "pos": 2,
+      "team": "Wamulongo FC",
+      "p": 18,
+      "w": 11,
+      "d": 4,
+      "l": 3,
+      "f": 30,
+      "a": 15,
+      "gd": 15,
+      "pts": 37
+     },
+     {
+      "pos": 3,
+      "team": "Buseera FC",
+      "p": 18,
+      "w": 11,
+      "d": 3,
+      "l": 4,
+      "f": 33,
+      "a": 15,
+      "gd": 18,
+      "pts": 36
+     },
+     {
+      "pos": 4,
+      "team": "Sky Sports FC",
+      "p": 18,
+      "w": 8,
+      "d": 7,
+      "l": 3,
+      "f": 28,
+      "a": 20,
+      "gd": 8,
+      "pts": 31
+     },
+     {
+      "pos": 5,
+      "team": "Katwe FC",
+      "p": 18,
+      "w": 7,
+      "d": 5,
+      "l": 6,
+      "f": 18,
+      "a": 13,
+      "gd": 5,
+      "pts": 26
+     },
+     {
+      "pos": 6,
+      "team": "FC 20",
+      "p": 18,
+      "w": 5,
+      "d": 7,
+      "l": 6,
+      "f": 18,
+      "a": 24,
+      "gd": -6,
+      "pts": 22
+     },
+     {
+      "pos": 7,
+      "team": "Bright Future FC",
+      "p": 18,
+      "w": 4,
+      "d": 6,
+      "l": 8,
+      "f": 11,
+      "a": 21,
+      "gd": -10,
+      "pts": 18
+     },
+     {
+      "pos": 8,
+      "team": "Pamojja FC",
+      "p": 18,
+      "w": 4,
+      "d": 2,
+      "l": 12,
+      "f": 9,
+      "a": 31,
+      "gd": -22,
+      "pts": 14
+     },
+     {
+      "pos": 9,
+      "team": "Dream United",
+      "p": 18,
+      "w": 3,
+      "d": 3,
+      "l": 12,
+      "f": 18,
+      "a": 33,
+      "gd": -15,
+      "pts": 12
+     },
+     {
+      "pos": 10,
+      "team": "Kateeba FC",
+      "p": 18,
+      "w": 2,
+      "d": 5,
+      "l": 11,
+      "f": 8,
+      "a": 32,
+      "gd": -24,
+      "pts": 11
+     }
+    ]
+   },
+   {
+    "season": "Season 4",
+    "title": "Season 4",
+    "rows": [
+     {
+      "pos": 1,
+      "team": "Mayuge Foundation",
+      "p": 20,
+      "w": 15,
+      "d": 3,
+      "l": 2,
+      "f": 42,
+      "a": 4,
+      "gd": 38,
+      "pts": 48
+     },
+     {
+      "pos": 2,
+      "team": "Boda Boda FC",
+      "p": 20,
+      "w": 13,
+      "d": 5,
+      "l": 2,
+      "f": 33,
+      "a": 4,
+      "gd": 29,
+      "pts": 44
+     },
+     {
+      "pos": 3,
+      "team": "Buseera FC",
+      "p": 20,
+      "w": 11,
+      "d": 6,
+      "l": 3,
+      "f": 11,
+      "a": 7,
+      "gd": 4,
+      "pts": 39
+     },
+     {
+      "pos": 4,
+      "team": "Buwolya United",
+      "p": 20,
+      "w": 11,
+      "d": 5,
+      "l": 4,
+      "f": 19,
+      "a": 20,
+      "gd": -1,
+      "pts": 38
+     },
+     {
+      "pos": 5,
+      "team": "Kateeba FC",
+      "p": 20,
+      "w": 9,
+      "d": 6,
+      "l": 5,
+      "f": 10,
+      "a": 15,
+      "gd": -5,
+      "pts": 33
+     },
+     {
+      "pos": 6,
+      "team": "O’Ten FC",
+      "p": 20,
+      "w": 9,
+      "d": 5,
+      "l": 6,
+      "f": 16,
+      "a": 12,
+      "gd": 4,
+      "pts": 32
+     },
+     {
+      "pos": 7,
+      "team": "Dream United",
+      "p": 20,
+      "w": 6,
+      "d": 8,
+      "l": 6,
+      "f": 14,
+      "a": 30,
+      "gd": -16,
+      "pts": 26
+     },
+     {
+      "pos": 8,
+      "team": "Kasugu FC",
+      "p": 20,
+      "w": 5,
+      "d": 8,
+      "l": 7,
+      "f": 12,
+      "a": 22,
+      "gd": -10,
+      "pts": 23
+     },
+     {
+      "pos": 9,
+      "team": "Girigiri FC",
+      "p": 20,
+      "w": 3,
+      "d": 10,
+      "l": 7,
+      "f": 11,
+      "a": 25,
+      "gd": -14,
+      "pts": 19
+     },
+     {
+      "pos": 10,
+      "team": "Namago FC",
+      "p": 20,
+      "w": 3,
+      "d": 8,
+      "l": 9,
+      "f": 3,
+      "a": 18,
+      "gd": -15,
+      "pts": 17
+     },
+     {
+      "pos": 11,
+      "team": "Globel H/S",
+      "p": 20,
+      "w": 2,
+      "d": 9,
+      "l": 9,
+      "f": 2,
+      "a": 28,
+      "gd": -26,
+      "pts": 15
+     }
+    ]
+   },
+   {
+    "season": "Season 3",
+    "title": "Season 3",
+    "rows": [
+     {
+      "pos": 1,
+      "team": "Boda Boda FC",
+      "p": 18,
+      "w": 14,
+      "d": 3,
+      "l": 1,
+      "f": 39,
+      "a": 8,
+      "gd": 31,
+      "pts": 45
+     },
+     {
+      "pos": 2,
+      "team": "Prima FC",
+      "p": 18,
+      "w": 13,
+      "d": 3,
+      "l": 2,
+      "f": 41,
+      "a": 7,
+      "gd": 34,
+      "pts": 42
+     },
+     {
+      "pos": 3,
+      "team": "Mayuge Foundation",
+      "p": 18,
+      "w": 10,
+      "d": 4,
+      "l": 4,
+      "f": 27,
+      "a": 6,
+      "gd": 21,
+      "pts": 34
+     },
+     {
+      "pos": 4,
+      "team": "Black Fire FC",
+      "p": 18,
+      "w": 10,
+      "d": 2,
+      "l": 6,
+      "f": 28,
+      "a": 14,
+      "gd": 14,
+      "pts": 32
+     },
+     {
+      "pos": 5,
+      "team": "Girigiri FC",
+      "p": 18,
+      "w": 8,
+      "d": 2,
+      "l": 8,
+      "f": 18,
+      "a": 29,
+      "gd": -11,
+      "pts": 26
+     },
+     {
+      "pos": 6,
+      "team": "Kasugu FC",
+      "p": 18,
+      "w": 6,
+      "d": 7,
+      "l": 5,
+      "f": 21,
+      "a": 31,
+      "gd": -10,
+      "pts": 25
+     },
+     {
+      "pos": 7,
+      "team": "Dream United",
+      "p": 18,
+      "w": 5,
+      "d": 5,
+      "l": 8,
+      "f": 11,
+      "a": 20,
+      "gd": -9,
+      "pts": 20
+     },
+     {
+      "pos": 8,
+      "team": "DA Skool",
+      "p": 18,
+      "w": 4,
+      "d": 6,
+      "l": 8,
+      "f": 10,
+      "a": 15,
+      "gd": -5,
+      "pts": 18
+     },
+     {
+      "pos": 9,
+      "team": "Namago FC",
+      "p": 18,
+      "w": 3,
+      "d": 3,
+      "l": 12,
+      "f": 10,
+      "a": 40,
+      "gd": -30,
+      "pts": 12
+     },
+     {
+      "pos": 10,
+      "team": "Sky Sports FC",
+      "p": 18,
+      "w": 3,
+      "d": 2,
+      "l": 13,
+      "f": 11,
+      "a": 46,
+      "gd": -35,
+      "pts": 11
+     }
+    ]
+   },
+   {
+    "season": "Season 2",
+    "title": "Season 2",
+    "rows": [
+     {
+      "pos": 1,
+      "team": "Young African FC",
+      "p": 22,
+      "w": 16,
+      "d": 5,
+      "l": 1,
+      "f": 42,
+      "a": 4,
+      "gd": 38,
+      "pts": 56
+     },
+     {
+      "pos": 2,
+      "team": "Prima FC",
+      "p": 22,
+      "w": 15,
+      "d": 5,
+      "l": 2,
+      "f": 33,
+      "a": 4,
+      "gd": 35,
+      "pts": 50
+     },
+     {
+      "pos": 3,
+      "team": "Buyemba FC",
+      "p": 22,
+      "w": 13,
+      "d": 6,
+      "l": 3,
+      "f": 11,
+      "a": 7,
+      "gd": 4,
+      "pts": 45
+     },
+     {
+      "pos": 4,
+      "team": "Kasugu FC",
+      "p": 22,
+      "w": 11,
+      "d": 6,
+      "l": 5,
+      "f": 19,
+      "a": 20,
+      "gd": -1,
+      "pts": 39
+     },
+     {
+      "pos": 5,
+      "team": "Katwe FC",
+      "p": 22,
+      "w": 10,
+      "d": 6,
+      "l": 6,
+      "f": 10,
+      "a": 15,
+      "gd": -5,
+      "pts": 36
+     },
+     {
+      "pos": 6,
+      "team": "Mayuge Foundation",
+      "p": 22,
+      "w": 10,
+      "d": 4,
+      "l": 8,
+      "f": 16,
+      "a": 12,
+      "gd": 4,
+      "pts": 34
+     },
+     {
+      "pos": 7,
+      "team": "Girigiri FC",
+      "p": 22,
+      "w": 9,
+      "d": 5,
+      "l": 8,
+      "f": 14,
+      "a": 30,
+      "gd": -16,
+      "pts": 32
+     },
+     {
+      "pos": 8,
+      "team": "Kyete FC",
+      "p": 22,
+      "w": 7,
+      "d": 8,
+      "l": 7,
+      "f": 12,
+      "a": 22,
+      "gd": -10,
+      "pts": 29
+     },
+     {
+      "pos": 9,
+      "team": "Phantom FC",
+      "p": 22,
+      "w": 5,
+      "d": 10,
+      "l": 7,
+      "f": 11,
+      "a": 25,
+      "gd": -14,
+      "pts": 25
+     },
+     {
+      "pos": 10,
+      "team": "Nsango FC",
+      "p": 22,
+      "w": 4,
+      "d": 8,
+      "l": 10,
+      "f": 3,
+      "a": 18,
+      "gd": -15,
+      "pts": 20
+     },
+     {
+      "pos": 11,
+      "team": "Namago FC",
+      "p": 22,
+      "w": 3,
+      "d": 10,
+      "l": 9,
+      "f": 2,
+      "a": 28,
+      "gd": -26,
+      "pts": 19
+     },
+     {
+      "pos": 12,
+      "team": "Sky Sports FC",
+      "p": 22,
+      "w": 2,
+      "d": 9,
+      "l": 11,
+      "f": 2,
+      "a": 28,
+      "gd": -26,
+      "pts": 15
+     }
+    ]
+   }
+  ],
+  "junior": [
+   {
+    "season": "Season 3",
+    "title": "Junior Soccer – Season 3",
+    "rows": [
+     {
+      "pos": 1,
+      "team": "Abedrico Young",
+      "p": 10,
+      "w": 6,
+      "d": 3,
+      "l": 1,
+      "f": 12,
+      "a": 3,
+      "gd": 9,
+      "pts": 21
+     },
+     {
+      "pos": 2,
+      "team": "Elite Academy",
+      "p": 10,
+      "w": 6,
+      "d": 2,
+      "l": 2,
+      "f": 6,
+      "a": 6,
+      "gd": 0,
+      "pts": 20
+     },
+     {
+      "pos": 3,
+      "team": "Wamulongo Young",
+      "p": 10,
+      "w": 3,
+      "d": 4,
+      "l": 3,
+      "f": 10,
+      "a": 9,
+      "gd": 1,
+      "pts": 13
+     },
+     {
+      "pos": 4,
+      "team": "Hilton Academy",
+      "p": 10,
+      "w": 3,
+      "d": 4,
+      "l": 4,
+      "f": 9,
+      "a": 9,
+      "gd": 0,
+      "pts": 13
+     },
+     {
+      "pos": 5,
+      "team": "Prima Young",
+      "p": 10,
+      "w": 4,
+      "d": 1,
+      "l": 5,
+      "f": 9,
+      "a": 13,
+      "gd": -4,
+      "pts": 13
+     },
+     {
+      "pos": 6,
+      "team": "Benefica",
+      "p": 10,
+      "w": 0,
+      "d": 2,
+      "l": 8,
+      "f": 1,
+      "a": 17,
+      "gd": -16,
+      "pts": 2
+     }
+    ]
+   },
+   {
+    "season": "Season 2",
+    "title": "Junior Soccer – Season 2",
+    "rows": [
+     {
+      "pos": 1,
+      "team": "Prima Young",
+      "p": 10,
+      "w": 7,
+      "d": 2,
+      "l": 1,
+      "f": 18,
+      "a": 7,
+      "gd": 11,
+      "pts": 23
+     },
+     {
+      "pos": 2,
+      "team": "Abedrico Young",
+      "p": 10,
+      "w": 6,
+      "d": 1,
+      "l": 3,
+      "f": 11,
+      "a": 9,
+      "gd": 2,
+      "pts": 19
+     },
+     {
+      "pos": 3,
+      "team": "Elite Academy",
+      "p": 10,
+      "w": 6,
+      "d": 0,
+      "l": 4,
+      "f": 15,
+      "a": 11,
+      "gd": 4,
+      "pts": 18
+     },
+     {
+      "pos": 4,
+      "team": "Hilton Academy",
+      "p": 10,
+      "w": 4,
+      "d": 2,
+      "l": 4,
+      "f": 8,
+      "a": 13,
+      "gd": -5,
+      "pts": 14
+     },
+     {
+      "pos": 5,
+      "team": "Katwe Young",
+      "p": 10,
+      "w": 3,
+      "d": 5,
+      "l": 2,
+      "f": 5,
+      "a": 12,
+      "gd": -7,
+      "pts": 14
+     },
+     {
+      "pos": 6,
+      "team": "Star Boys",
+      "p": 10,
+      "w": 2,
+      "d": 2,
+      "l": 6,
+      "f": 2,
+      "a": 15,
+      "gd": -13,
+      "pts": 8
+     }
+    ]
+   },
+   {
+    "season": "Season 1",
+    "title": "Junior Soccer – Season 1",
+    "rows": [
+     {
+      "pos": 1,
+      "team": "Prima Young",
+      "p": 10,
+      "w": 8,
+      "d": 1,
+      "l": 1,
+      "f": 19,
+      "a": 7,
+      "gd": 12,
+      "pts": 25
+     },
+     {
+      "pos": 2,
+      "team": "One Coing Young",
+      "p": 10,
+      "w": 6,
+      "d": 1,
+      "l": 3,
+      "f": 11,
+      "a": 9,
+      "gd": 2,
+      "pts": 19
+     },
+     {
+      "pos": 3,
+      "team": "Elite Academy",
+      "p": 10,
+      "w": 6,
+      "d": 0,
+      "l": 4,
+      "f": 15,
+      "a": 11,
+      "gd": 4,
+      "pts": 18
+     },
+     {
+      "pos": 4,
+      "team": "Star Boys",
+      "p": 10,
+      "w": 4,
+      "d": 4,
+      "l": 3,
+      "f": 9,
+      "a": 15,
+      "gd": -5,
+      "pts": 16
+     },
+     {
+      "pos": 5,
+      "team": "Katwe Young",
+      "p": 10,
+      "w": 3,
+      "d": 5,
+      "l": 2,
+      "f": 5,
+      "a": 12,
+      "gd": -7,
+      "pts": 14
+     },
+     {
+      "pos": 6,
+      "team": "Hilton Academy",
+      "p": 10,
+      "w": 3,
+      "d": 2,
+      "l": 6,
+      "f": 3,
+      "a": 16,
+      "gd": -13,
+      "pts": 11
+     }
+    ]
+   }
+  ],
+  "girls": [
+   {
+    "season": "Season 1",
+    "title": "Girls Soccer Season 1",
+    "rows": [
+     {
+      "pos": 1,
+      "team": "Tawheed",
+      "p": 5,
+      "w": 3,
+      "d": 2,
+      "l": 0,
+      "f": 8,
+      "a": 2,
+      "gd": 6,
+      "pts": 11
+     },
+     {
+      "pos": 2,
+      "team": "Mayuge Light",
+      "p": 5,
+      "w": 3,
+      "d": 1,
+      "l": 2,
+      "f": 3,
+      "a": 3,
+      "gd": 0,
+      "pts": 10
+     },
+     {
+      "pos": 3,
+      "team": "Lady Fatima",
+      "p": 5,
+      "w": 2,
+      "d": 2,
+      "l": 1,
+      "f": 9,
+      "a": 4,
+      "gd": 5,
+      "pts": 8
+     },
+     {
+      "pos": 4,
+      "team": "Mayuge Angels",
+      "p": 5,
+      "w": 2,
+      "d": 1,
+      "l": 2,
+      "f": 7,
+      "a": 4,
+      "gd": 3,
+      "pts": 7
+     },
+     {
+      "pos": 5,
+      "team": "LHFC",
+      "p": 5,
+      "w": 2,
+      "d": 0,
+      "l": 3,
+      "f": 4,
+      "a": 8,
+      "gd": -4,
+      "pts": 6
+     },
+     {
+      "pos": 6,
+      "team": "Kaluba",
+      "p": 5,
+      "w": 0,
+      "d": 0,
+      "l": 5,
+      "f": 1,
+      "a": 12,
+      "gd": -11,
+      "pts": 0
+     }
+    ]
+   },
+   {
+    "season": "Season 4",
+    "title": "Netball – Season 4",
+    "rows": [
+     {
+      "pos": 1,
+      "team": "De Source N.C",
+      "p": 10,
+      "w": 8,
+      "d": 0,
+      "l": 2,
+      "f": 225,
+      "a": 116,
+      "gd": 109,
+      "pts": 24
+     },
+     {
+      "pos": 2,
+      "team": "Sky N.C",
+      "p": 10,
+      "w": 7,
+      "d": 1,
+      "l": 2,
+      "f": 209,
+      "a": 207,
+      "gd": 102,
+      "pts": 22
+     },
+     {
+      "pos": 3,
+      "team": "Trinity N.C",
+      "p": 10,
+      "w": 6,
+      "d": 2,
+      "l": 2,
+      "f": 150,
+      "a": 110,
+      "gd": 40,
+      "pts": 20
+     },
+     {
+      "pos": 4,
+      "team": "Tse Tse N.C",
+      "p": 10,
+      "w": 6,
+      "d": 2,
+      "l": 3,
+      "f": 128,
+      "a": 114,
+      "gd": 14,
+      "pts": 20
+     },
+     {
+      "pos": 5,
+      "team": "St. Mulumba N.C",
+      "p": 10,
+      "w": 5,
+      "d": 3,
+      "l": 2,
+      "f": 120,
+      "a": 130,
+      "gd": -10,
+      "pts": 18
+     },
+     {
+      "pos": 6,
+      "team": "Kasugu N.C",
+      "p": 10,
+      "w": 3,
+      "d": 4,
+      "l": 3,
+      "f": 116,
+      "a": 140,
+      "gd": -24,
+      "pts": 13
+     }
+    ]
+   },
+   {
+    "season": "Season 3",
+    "title": "Netball – Season 3",
+    "rows": [
+     {
+      "pos": 1,
+      "team": "Trinity N.C",
+      "p": 10,
+      "w": 7,
+      "d": 1,
+      "l": 2,
+      "f": 205,
+      "a": 117,
+      "gd": 88,
+      "pts": 22
+     },
+     {
+      "pos": 2,
+      "team": "De Source N.C",
+      "p": 10,
+      "w": 6,
+      "d": 2,
+      "l": 2,
+      "f": 197,
+      "a": 105,
+      "gd": 92,
+      "pts": 20
+     },
+     {
+      "pos": 3,
+      "team": "Tawheed N.C",
+      "p": 10,
+      "w": 6,
+      "d": 2,
+      "l": 2,
+      "f": 158,
+      "a": 114,
+      "gd": 44,
+      "pts": 20
+     },
+     {
+      "pos": 4,
+      "team": "Kasugu N.C",
+      "p": 10,
+      "w": 5,
+      "d": 2,
+      "l": 3,
+      "f": 133,
+      "a": 130,
+      "gd": 3,
+      "pts": 17
+     },
+     {
+      "pos": 5,
+      "team": "Buyemba N.C",
+      "p": 10,
+      "w": 4,
+      "d": 3,
+      "l": 3,
+      "f": 125,
+      "a": 135,
+      "gd": -10,
+      "pts": 15
+     },
+     {
+      "pos": 6,
+      "team": "Sky N.C",
+      "p": 10,
+      "w": 4,
+      "d": 2,
+      "l": 4,
+      "f": 118,
+      "a": 147,
+      "gd": -29,
+      "pts": 14
+     }
+    ]
+   },
+   {
+    "season": "Season 2",
+    "title": "Netball – Season 2",
+    "rows": [
+     {
+      "pos": 1,
+      "team": "Trinity N.C",
+      "p": 10,
+      "w": 8,
+      "d": 0,
+      "l": 2,
+      "f": 223,
+      "a": 114,
+      "gd": 109,
+      "pts": 24
+     },
+     {
+      "pos": 2,
+      "team": "Kasugu N.C",
+      "p": 10,
+      "w": 7,
+      "d": 1,
+      "l": 2,
+      "f": 204,
+      "a": 105,
+      "gd": 99,
+      "pts": 22
+     },
+     {
+      "pos": 3,
+      "team": "De Source N.C",
+      "p": 10,
+      "w": 6,
+      "d": 2,
+      "l": 2,
+      "f": 158,
+      "a": 118,
+      "gd": 40,
+      "pts": 20
+     },
+     {
+      "pos": 4,
+      "team": "Tawheed N.C",
+      "p": 10,
+      "w": 6,
+      "d": 2,
+      "l": 3,
+      "f": 129,
+      "a": 112,
+      "gd": 17,
+      "pts": 20
+     },
+     {
+      "pos": 5,
+      "team": "Sky N.C",
+      "p": 10,
+      "w": 5,
+      "d": 3,
+      "l": 2,
+      "f": 125,
+      "a": 138,
+      "gd": -13,
+      "pts": 18
+     },
+     {
+      "pos": 6,
+      "team": "Buyemba N.C",
+      "p": 10,
+      "w": 3,
+      "d": 4,
+      "l": 3,
+      "f": 118,
+      "a": 142,
+      "gd": -24,
+      "pts": 13
+     }
+    ]
+   },
+   {
+    "season": "Season 1",
+    "title": "Netball – Season 1",
+    "rows": [
+     {
+      "pos": 1,
+      "team": "De Source N.C",
+      "p": 10,
+      "w": 8,
+      "d": 0,
+      "l": 2,
+      "f": 114,
+      "a": 65,
+      "gd": 49,
+      "pts": 24
+     },
+     {
+      "pos": 2,
+      "team": "Tawheed N.C",
+      "p": 10,
+      "w": 7,
+      "d": 2,
+      "l": 1,
+      "f": 105,
+      "a": 88,
+      "gd": 17,
+      "pts": 23
+     },
+     {
+      "pos": 3,
+      "team": "Trinity N.C",
+      "p": 10,
+      "w": 7,
+      "d": 1,
+      "l": 2,
+      "f": 118,
+      "a": 93,
+      "gd": 25,
+      "pts": 22
+     },
+     {
+      "pos": 4,
+      "team": "Kasugu N.C",
+      "p": 10,
+      "w": 6,
+      "d": 2,
+      "l": 3,
+      "f": 112,
+      "a": 102,
+      "gd": 10,
+      "pts": 20
+     },
+     {
+      "pos": 5,
+      "team": "Buyemba N.C",
+      "p": 10,
+      "w": 4,
+      "d": 4,
+      "l": 2,
+      "f": 138,
+      "a": 98,
+      "gd": 40,
+      "pts": 16
+     },
+     {
+      "pos": 6,
+      "team": "Sky N.C",
+      "p": 10,
+      "w": 3,
+      "d": 4,
+      "l": 3,
+      "f": 142,
+      "a": 112,
+      "gd": 30,
+      "pts": 13
+     }
+    ]
+   }
+  ]
+ }
+}

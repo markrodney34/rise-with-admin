@@ -1,0 +1,3 @@
+export default function PageHead({ title, sub }: { title: string; sub: string }) {
+  return (<section className="relative overflow-hidden bg-navy pb-14 pt-36 text-white"><div className="absolute -right-24 -top-32 h-96 w-96 rounded-full border border-white/10" aria-hidden="true" /><div className="absolute -right-12 -top-20 h-72 w-72 rounded-full border border-white/10" aria-hidden="true" /><div className="wrap relative"><p className="eyebrow text-lime">RISE Sports Foundation <span className="mx-2 text-white/40">/</span> Mayuge, Uganda</p><h1 className="mt-4 font-display text-6xl font-bold uppercase leading-[.9] tracking-[-.025em] sm:text-8xl">{title}</h1><p className="mt-5 max-w-2xl text-base leading-7 text-white/80 sm:text-lg">{sub}</p></div></section>);
+}

@@ -1,0 +1,21 @@
+export type Row = { pos: number; team: string; p: number; w: number; d: number; l: number; f: number; a: number; gd: number; pts: number };
+export type Season = { season: string; title: string; rows: Row[] };
+export type League = { name: string; img: string; tag: string; blurb: string; intro: string; objectives: string[]; stats: { n: string; t: string }[] };
+export type NavItem = { label: string; href: string; children?: { label: string; href: string }[] };
+export type Highlight = { id: number; cat: string; title: string; tone: number; src: string };
+export type Content = {
+  site: { name: string; url: string; tagline: string; email: string; phone: string; address: string; social: { label: string; href: string }[] };
+  home: { heroBadge: string; heroLine1: string; heroLine2: string; heroLine3: string; heroSub: string; whoTitle: string; whoText: string; mission: string; vision: string; values: string; impact: { n: string; t: string }[]; ctaTitle: string; ctaText: string };
+  about: { title: string; sub: string; heading: string; paragraphs: string[]; sideTitle: string; sideText: string };
+  leagues: Record<string, League>;
+  milestones: { year: string; title: string; text: string }[];
+  partners: { name: string; where: string; role: string }[];
+  funders: string[];
+  images: Record<string, { src: string; alt: string }>;
+  highlights: Highlight[];
+  nav: NavItem[];
+  legal: { privacy: string; terms: string };
+  girlsReasons: string[];
+  standings: Record<string, Season[]>;
+};
+export type Message = { id: string; name: string; email: string; topic: string; message: string; date: string; read: boolean };

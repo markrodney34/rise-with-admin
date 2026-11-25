@@ -1,0 +1,2 @@
+import Link from "next/link"; import PageHead from "@/components/PageHead";
+export default function NotFound() { return (<><PageHead title="Page not found" sub="That page doesn't exist or has moved." /><section className="sec"><div className="wrap flex flex-wrap gap-3"><Link href="/" className="btn-n">Go to home</Link><Link href="/highlights" className="btn-g">See highlights</Link></div></section></>); }

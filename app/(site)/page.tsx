@@ -1,0 +1,2 @@
+import Hero from "@/components/Hero"; import { Who, Leagues, Impact, Journey, Gallery, Partners, CTA } from "@/components/Home"; import { getContent } from "@/lib/content";
+export default function Home() { const { home: h } = getContent(); return (<><Hero badge={h.heroBadge} l1={h.heroLine1} l2={h.heroLine2} l3={h.heroLine3} sub={h.heroSub} /><Who /><Leagues /><Impact /><Journey /><Gallery /><Partners /><CTA /></>); }
