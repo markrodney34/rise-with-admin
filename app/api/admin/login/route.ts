@@ -12,7 +12,13 @@ function prune(now: number) {
 }
 
 export async function POST(req: Request) {
-  if (process.env.NODE_ENV === "production" && (!sessionSecretConfigured() || !process.env.SUPABASE_URL || !process.env.SUPABASE_SECRET_KEY)) return NextResponse.json({ error: "Admin login is not configured on this server." }, { status: 503 });
+  const missing: string[] = [];
+  if (!sessionSecretConfigured()) missing.push("SESSION_SECRET (at least 32 characters)");
+  if (!process.env.SUPABASE_URL?.trim()) missing.push("SUPABASE_URL");
+  if (!process.env.SUPABASE_SECRET_KEY?.trim()) missing.push("SUPABASE_SECRET_KEY");
+  if (process.env.NODE_ENV === "production" && missing.length) {
+    return NextResponse.json({ error: `Admin login is not configured. Missing or invalid: ${missing.join(", ")}. Add these in Vercel Project Settings → Environment Variables for Production, then redeploy.` }, { status: 503 });
+  }
   const now = Date.now();
   prune(now);
   const key = clientIp(req);

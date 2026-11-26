@@ -6,7 +6,7 @@ const COOKIE = "rise_admin";
 const FALLBACK_SALT = "84ea39931c74cc99867be1c0828dba35";
 const FALLBACK_HASH = "9e682a77b0b5c78a7c04cd378a373773201376912c7df613360fdd2af1a16f5a";
 export const COOKIE_NAME = COOKIE;
-export const sessionSecretConfigured = () => !!process.env.SESSION_SECRET && process.env.SESSION_SECRET.length >= 32;
+export const sessionSecretConfigured = () => !!process.env.SESSION_SECRET?.trim() && process.env.SESSION_SECRET.trim().length >= 32;
 const hash = (pw: string, salt: string) => crypto.scryptSync(pw, salt, 32).toString("hex");
 function safeEq(a: string, b: string) { const x = Buffer.from(a), y = Buffer.from(b); return x.length === y.length && crypto.timingSafeEqual(x, y); }
 async function credential() {
@@ -34,7 +34,7 @@ export async function setPassword(pw: string) {
   if (error) throw new Error(`Could not update admin credentials in Supabase: ${error.message}`);
 }
 function sessionSecret() {
-  if (sessionSecretConfigured()) return process.env.SESSION_SECRET!;
+  if (sessionSecretConfigured()) return process.env.SESSION_SECRET!.trim();
   if (process.env.NODE_ENV === "production") throw new Error("SESSION_SECRET must be configured with at least 32 characters.");
   return process.env.SESSION_SECRET || "development-only-session-secret";
 }
