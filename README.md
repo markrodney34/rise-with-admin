@@ -8,14 +8,48 @@ Website for RISE Sports Foundation, a community sports organization in Mayuge Di
 - npm
 - A Supabase project
 
-## Configure Supabase
+## Connect Supabase (Windows / PowerShell)
 
-1. Create a Supabase project.
-2. In the Supabase SQL Editor, run [`supabase/migrations/20261126000000_create_rise_storage.sql`](supabase/migrations/20261126000000_create_rise_storage.sql).
-3. Copy `.env.example` to `.env.local` and set your project URL, server-side secret key, and a random `SESSION_SECRET` of at least 32 characters. Set `ADMIN_PASSWORD` to a unique password for the first admin sign-in if you are not migrating an existing password hash.
-4. Keep `SUPABASE_SECRET_KEY` and `SESSION_SECRET` only in server or hosting environment settings. Never expose them in browser code or variables named `NEXT_PUBLIC_*`.
+The app is in the `rise` folder. If PowerShell is currently at `...ise-with-admin`, first enter the folder that contains `package.json`:
 
-The migration creates JSONB content storage, the contact message inbox, a hashed admin credential table, and a private `rise-uploads` Storage bucket. Row Level Security is enabled and there are no browser access policies. The app uses Supabase only from server code.
+```powershell
+cd .\rise
+```
+
+Create your Supabase project at [supabase.com/dashboard](https://supabase.com/dashboard). In that project:
+
+1. Open **SQL Editor**, create a query, paste in the contents of [`supabase/migrations/20261126000000_create_rise_storage.sql`](supabase/migrations/20261126000000_create_rise_storage.sql), and run it.
+2. Open the project's **Connect** dialog to copy the Project URL. Find the server secret key under **Project Settings → API Keys**. Use the `sb_secret_...` key.
+3. In PowerShell, copy the example environment file, then open your private copy:
+
+   ```powershell
+   Copy-Item .env.example .env.local
+   notepad .env.local
+   ```
+
+4. In Notepad, replace the example values with your real values:
+
+   ```env
+   SUPABASE_URL=https://your-project-ref.supabase.co
+   SUPABASE_SECRET_KEY=sb_secret_your_real_key
+   SESSION_SECRET=paste-a-random-secret-at-least-32-characters-long
+   ADMIN_PASSWORD=choose-a-unique-admin-password
+   ```
+
+   Save and close Notepad. Keep the secret key and session secret private. Do not send them in chat or put them in code that runs in a browser. Supabase's secret key bypasses Row Level Security, so this project uses it only in server code. See [Supabase's API key guidance](https://supabase.com/docs/guides/getting-started/api-keys).
+
+5. Install and start the app from this same `rise` folder:
+
+   ```powershell
+   npm install
+   npm run dev
+   ```
+
+   Visit `http://localhost:3000`, then open `http://localhost:3000/admin` to sign in with `ADMIN_PASSWORD`.
+
+`.env.local` is intentionally ignored by Git and won't appear in a normal File Explorer view because its name begins with a dot. In File Explorer, turn on **View → Show → Hidden items**. In PowerShell, `Get-ChildItem -Force .env*` lists both environment files. The checked-in `.env.example` contains placeholders only; put your real keys in `.env.local`.
+
+The SQL migration creates JSONB content storage, the contact message inbox, a hashed admin credential table, and a private `rise-uploads` Storage bucket. Row Level Security is enabled and there are no browser access policies. The app uses Supabase only from server code.
 
 ## Run locally
 
@@ -28,10 +62,10 @@ Open [http://localhost:3000](http://localhost:3000) and `/admin` for the control
 
 ## Migrate existing local data
 
-After applying the SQL migration and setting Supabase variables, run this from the project directory. PowerShell users can load `.env.local` values into their current shell or use Node's `--env-file` option:
+After applying the SQL migration and saving `.env.local`, run this from the `rise` project directory to import existing local messages, password hash, and uploaded images:
 
-```bash
-node --env-file=.env.local scripts/migrate-to-supabase.mjs
+```powershell
+npm run migrate:supabase
 ```
 
 The script migrates `content/site.json`, ignored local contact messages and password hash when present, and supported images from `content/uploads/`. It can be rerun safely for the same records and image names. Keep a backup of local files until the Supabase project is confirmed.
