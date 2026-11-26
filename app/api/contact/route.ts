@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import crypto from "node:crypto";
-import { getMessages, saveMessages } from "@/lib/content";
+import { addMessage } from "@/lib/content";
 import { clientIp } from "@/lib/client-ip";
 const schema = z.object({ name: z.string().min(2).max(120), email: z.string().email().max(200), topic: z.enum(["General", "Partnership", "Volunteer"]), message: z.string().min(10).max(5000), website: z.string().optional() });
 const hits = new Map<string, number[]>();
@@ -19,6 +19,6 @@ export async function POST(req: Request) {
   if (p.data.website) return NextResponse.json({ ok: true }); // honeypot
   hits.set(ip, [...recent, now]);
   const { website, ...m } = p.data; void website;
-  saveMessages([{ id: crypto.randomUUID(), ...m, date: new Date().toISOString(), read: false }, ...getMessages()].slice(0, 1000));
+  await addMessage({ id: crypto.randomUUID(), ...m, date: new Date().toISOString(), read: false });
   return NextResponse.json({ ok: true });
 }

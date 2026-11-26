@@ -1,6 +1,6 @@
 import { getContent } from "@/lib/content"; import PageHead from "./PageHead"; import Photo from "./Photo"; import Standings from "./Standings"; import { CTA, Gallery } from "./Home";
-export default function LeaguePage({ k }: { k: string }) {
-  const c = getContent(); const reasons = c.girlsReasons; const l = c.leagues[k]; const key = k.split("-")[0]; const seasons = c.standings[key] ?? [];
+export default async function LeaguePage({ k }: { k: string }) {
+  const c = await getContent(); const reasons = c.girlsReasons; const l = c.leagues[k]; const key = k.split("-")[0]; const seasons = c.standings[key] ?? [];
   const soccer = key === "girls" ? seasons.slice(0, 1) : seasons; const netball = key === "girls" ? seasons.slice(1) : [];
   return (<><PageHead title={l.name} sub={l.blurb} />
     <section className="sec"><div className="wrap grid gap-10 lg:grid-cols-2"><div className="relative aspect-[4/3] overflow-hidden border border-navy/10 shadow-lift"><Photo slot={l.img} sizes="(min-width:1024px) 50vw,100vw" /><span className="absolute bottom-4 left-4 bg-lime px-3 py-2 text-xs font-extrabold uppercase tracking-[.14em] text-navy">The RISE community</span></div>

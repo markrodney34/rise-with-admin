@@ -1,44 +1,36 @@
-# RISE website: Admin panel
+# RISE website admin panel
 
-Open **/admin** on your site (e.g. http://localhost:3000/admin) and sign in.
+Open `/admin` on the site and sign in. Before using the panel, configure Supabase and run the SQL migration described in [README.md](README.md#configure-supabase). The server needs `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, and a unique `SESSION_SECRET` of at least 32 characters.
 
-## Run it
+For local development, copy `.env.example` to `.env.local`, fill in those values, then run:
+
 ```bash
 npm install
-cp .env.example .env.local     # then edit ADMIN_PASSWORD and SESSION_SECRET
-npm run build && npm start     # or: npm run dev
+npm run dev
 ```
-If no `ADMIN_PASSWORD` is set and no password has been saved in the admin panel, a built-in development fallback is used. Production login stays disabled until `ADMIN_PASSWORD` and an independent `SESSION_SECRET` of at least 32 characters are configured.
+
+`ADMIN_PASSWORD` is an optional initial password when no password hash has been migrated. Passwords changed through the panel are stored as salted scrypt hashes in Supabase. Existing local content, messages, password hashes, and photos can be imported with `node --env-file=.env.local scripts/migrate-to-supabase.mjs`.
 
 ## What the admin controls
+
 | Section | Controls |
 |---|---|
-| Site & contact | name, URL, email, phone, address, tagline, social links (footer, contact page, SEO) |
-| Home page | hero text, "Who we are", mission/vision/values, impact figures, call-to-action |
-| About page | title, paragraphs, side box |
-| Leagues | Senior / Junior / Girls: name, blurb, intro, objectives, key figures, "why girls chose soccer" |
-| Our journey | timeline milestones (add, edit, reorder, delete) |
-| Partners & funders | partner cards and funder list |
-| Highlights gallery | upload photos, captions, categories (filter buttons), reorder, delete |
-| Page photos & logo | hero, about, CTA, league photos, logo; media library |
-| League tables | seasons and clubs for all leagues and netball; auto-calculates P, GD, Pts and positions |
-| Navigation | main menu and drop-down links |
-| Privacy & terms | full text of both pages |
-| Messages | inbox for the website contact form (reply, mark read, delete) |
-| Account | change the admin password |
+| Site & contact | Name, URL, email, phone, address, tagline, social links |
+| Home page | Hero text, organization information, mission, impact, call to action |
+| About page | Title, paragraphs, side box |
+| Leagues | Senior, Junior, and Girls league details and objectives |
+| Our journey | Timeline milestones |
+| Partners & funders | Partner cards and funder list |
+| Highlights gallery | Uploaded photos, captions, categories, order, delete |
+| Page photos & logo | Page images and media library |
+| League tables | Seasons, clubs, and standings |
+| Navigation | Main menu and dropdown links |
+| Privacy & terms | Text for both pages |
+| Messages | Contact form inbox, mark read, delete |
+| Account | Change the admin password |
 
-Press **Save & publish** in a section and the live site updates immediately.
+Changes are saved to Supabase and shown on the live site. Uploaded images are kept in the private `rise-uploads` bucket and served by the site for display.
 
-## How it works
-- Content lives in `content/site.json` (seeded from your original site text and tables).
-- Contact-form messages go to `content/messages.json`. Uploaded photos go to `content/uploads/` (served at `/uploads/...`).
-- Admin login uses a signed, HTTP-only cookie (12 h), login rate-limiting and hashed password storage.
-- The admin API is in `app/api/admin/*`; the editor UI is `components/admin/AdminApp.tsx`.
+## Security and backups
 
-## Hosting note (important)
-The panel saves to files, so host on something with a **writable, persistent disk**: a VPS, Render/Railway/Fly with a volume, or `npm start` on any server. Set `DATA_DIR` to that disk.
-It will **not** persist on read-only/serverless hosts (e.g. Vercel). For those, swap `lib/content.ts` for a database (every read and write goes through that one file).
-
-## Notes
-- Back up the `content/` folder: it is your whole site's data.
-- Pasted external image URLs must be from hosts listed in `next.config.mjs`; uploaded images work anywhere.
+Keep the Supabase secret key and session secret in server environment settings only. Never add them to client-side code or `NEXT_PUBLIC_*` variables. The database tables have Row Level Security enabled with no browser access policies; the server secret key is used only in server modules. Back up the Supabase database and Storage bucket using your Supabase project backup process.

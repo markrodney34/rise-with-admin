@@ -1,6 +1,6 @@
 import { getContent } from "@/lib/content"; import Reveal from "./Reveal";
-export default function Timeline() {
-  const { milestones } = getContent();
+export default async function Timeline() {
+  const { milestones } = await getContent();
   return (
     <ol className="relative ml-3 border-l-2 border-blue/40 lg:ml-0 lg:grid lg:grid-cols-4 lg:gap-6 lg:border-l-0 lg:border-t-2 lg:pt-10">
       {milestones.map((m, i) => (

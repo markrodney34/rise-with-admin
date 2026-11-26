@@ -4,8 +4,8 @@ import PageHead from "@/components/PageHead";
 import ContactForm from "@/components/ContactForm";
 import { getContent } from "@/lib/content";
 export const metadata: Metadata = { title: "Contact", description: "Get in touch with RISE Sports Foundation about partnerships, volunteering or joining a league.", alternates: { canonical: "/contact" } };
-export default function Page() {
-  const { site } = getContent();
+export default async function Page() {
+  const { site } = await getContent();
   const location = site.address || "Mayuge District, Uganda";
   const mapQuery = encodeURIComponent(location);
   const mapEmbed = `https://maps.google.com/maps?q=${mapQuery}&z=13&output=embed`;

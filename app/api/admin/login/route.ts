@@ -12,7 +12,7 @@ function prune(now: number) {
 }
 
 export async function POST(req: Request) {
-  if (process.env.NODE_ENV === "production" && !sessionSecretConfigured()) return NextResponse.json({ error: "Admin login is not configured on this server." }, { status: 503 });
+  if (process.env.NODE_ENV === "production" && (!sessionSecretConfigured() || !process.env.SUPABASE_URL || !process.env.SUPABASE_SECRET_KEY)) return NextResponse.json({ error: "Admin login is not configured on this server." }, { status: 503 });
   const now = Date.now();
   prune(now);
   const key = clientIp(req);
@@ -23,13 +23,13 @@ export async function POST(req: Request) {
 
   const body = await req.json().catch(() => null);
   const password = typeof body?.password === "string" ? body.password : "";
-  if (!checkPassword(password)) {
+  if (!await checkPassword(password)) {
     tries.set(key, { count: (active ? previous.count : 0) + 1, started: active ? previous.started : now });
     return NextResponse.json({ error: "Wrong password." }, { status: 401 });
   }
 
   tries.delete(key);
   const res = NextResponse.json({ ok: true });
-  res.cookies.set(COOKIE_NAME, makeToken(), { httpOnly: true, sameSite: "lax", secure: process.env.NODE_ENV === "production", path: "/", maxAge: 60 * 60 * 12 });
+  res.cookies.set(COOKIE_NAME, await makeToken(), { httpOnly: true, sameSite: "lax", secure: process.env.NODE_ENV === "production", path: "/", maxAge: 60 * 60 * 12 });
   return res;
 }

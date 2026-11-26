@@ -3,8 +3,8 @@ const cols = [
   { t: "Explore", l: [["Home", "/"], ["About Us", "/about"], ["Our Journey", "/about#journey"], ["Highlights", "/highlights"], ["Our Impact", "/#impact"]] },
   { t: "Our leagues", l: [["Senior Soccer", "/senior-soccer"], ["Junior Soccer", "/junior-soccer"], ["Girls Soccer", "/girls-soccer"], ["Community Sports", "/girls-soccer#netball"]] },
 ];
-export default function Footer() {
-  const { site } = getContent();
+export default async function Footer() {
+  const { site } = await getContent();
   const lk = "inline-block py-1.5 text-white/75 transition hover:translate-x-1 hover:text-white";
   return (
     <footer className="bg-navy text-white">

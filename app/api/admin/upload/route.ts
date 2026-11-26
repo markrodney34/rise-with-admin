@@ -1,9 +1,7 @@
 import { NextResponse } from "next/server";
-import fs from "node:fs";
 import crypto from "node:crypto";
-import path from "node:path";
 import { isAdmin } from "@/lib/auth";
-import { UPLOAD_DIR, listUploads } from "@/lib/content";
+import { deleteUpload, listUploads, uploadImage } from "@/lib/content";
 const imageTypes: Record<string, string> = { jpg: "image/jpeg", jpeg: "image/jpeg", png: "image/png", webp: "image/webp", avif: "image/avif", gif: "image/gif" };
 const maxFileBytes = 10 * 1024 * 1024;
 const maxTotalBytes = 30 * 1024 * 1024;
@@ -36,18 +34,16 @@ export async function POST(req: Request) {
     prepared.push({ file, bytes, ext });
   }
   const out: string[] = [];
-  fs.mkdirSync(UPLOAD_DIR, { recursive: true });
   for (const item of prepared) {
     const name = `${Date.now()}-${crypto.randomUUID()}.${item.ext}`;
-    fs.writeFileSync(path.join(UPLOAD_DIR, name), item.bytes, { flag: "wx", mode: 0o644 });
-    out.push(`/uploads/${name}`);
+    out.push(await uploadImage(name, item.bytes, imageTypes[item.ext]));
   }
-  return NextResponse.json({ ok: true, urls: out, uploads: listUploads() });
+  return NextResponse.json({ ok: true, urls: out, uploads: await listUploads() });
 }
 export async function DELETE(req: Request) {
   if (!await isAdmin()) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   const { name } = await req.json().catch(() => ({ name: "" }));
   const safe = String(name).match(/^\d+-[0-9a-f-]{36}\.(?:jpe?g|png|webp|avif|gif)$/i)?.[0];
-  if (safe) { const file = path.join(UPLOAD_DIR, safe); if (fs.existsSync(file)) fs.unlinkSync(file); }
-  return NextResponse.json({ ok: true, uploads: listUploads() });
+  if (safe) await deleteUpload(safe);
+  return NextResponse.json({ ok: true, uploads: await listUploads() });
 }
